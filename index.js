@@ -63,3 +63,25 @@ var myList = [["cereal", 3], ["milk", 2], ["bananas", 3], ["juice", 2], ["eggs",
 // Booleans
 var trueBool = true;
 var falseBool = false;
+
+// Operators
+var num1 = 10;
+var num2 = 11;
+var num3 = '10';
+var num4 = 10;
+
+if(num1 == num2){
+    console.log("Valid");
+}
+else{
+    console.log("invalid");
+}
+
+if(num1 === num3){
+    console.log("\nnum1 strictly equals num3");
+}
+else if(num1 === num4){
+    console.log("\nnum1 strictly equals num4");
+}
+
+

@@ -38,6 +38,6 @@ function lookUpProfile(name, prop){
     return "No such contact!";
 }
 
-var data = lookUpProfile("Akira", "likes");
+var data = lookUpProfile("Kristian", "likes");
 
 console.log(data);

@@ -70,18 +70,26 @@ var num2 = 11;
 var num3 = '10';
 var num4 = 10;
 
-if(num1 == num2){
+if(num1 == num2){ // performs a type conversion
     console.log("Valid");
 }
 else{
     console.log("invalid");
 }
 
-if(num1 === num3){
+if(num1 === num3){ // doesn't perform a type conversion
     console.log("\nnum1 strictly equals num3");
 }
 else if(num1 === num4){
     console.log("\nnum1 strictly equals num4");
+}
+
+if(num1 < 20 && num2 > 10){
+    console.log("Passed AND test")
+}
+
+if(num1 < 20 || num2 > 10){
+    console.log("Passed OR test")
 }
 
 

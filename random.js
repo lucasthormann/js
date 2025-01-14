@@ -15,3 +15,16 @@ function randomRange(myMin, myMax){
 var myRandom = randomRange(5, 15);
 
 console.log(myRandom);
+
+
+// parseInt function
+function convertToInteger(str){
+    return parseInt(str);
+}
+
+convertToInteger("54");
+
+function convertBinToInteger(str){
+    return parseInt(str, 2);
+}
+convertBinToInteger("10011");

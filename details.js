@@ -19,6 +19,7 @@ var catName = "Spice";
 
 
 function catTalk(){
+    // enables strict mode which cathces common coding mistakes and unsafe actions (sometimes at top of file)
     "use strict";
 
     catName = "Everything Nice";

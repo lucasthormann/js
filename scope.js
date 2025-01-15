@@ -25,3 +25,30 @@ function fun3(){
 fun1();
 fun2();
 fun3();
+
+// var vs let scope
+function checkVarScope(){
+    "use strict";
+    var i = "function scope";
+    if(true){
+        i = "block scope";
+        console.log("Block scope i is: ", i);
+    }
+    console.log("Function scope i is: ", i);
+    return i;
+}
+
+checkVarScope();
+
+function checkLetScope(){
+    "use strict";
+    let i = "function scope";
+    if(true){
+        let i = "block scope";
+        console.log("\nBlock scope i is: ", i);
+    }
+    console.log("Function scope i is: ", i);
+    return i;
+}
+
+checkLetScope();

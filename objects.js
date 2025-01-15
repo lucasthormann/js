@@ -90,3 +90,24 @@ var myMusic = [
 var mySong = myMusic[1].title;
 var myFormat = myMusic[1].formats[1];
 console.log("You can listen to " + mySong + " as a(n) " + myFormat + " file!");
+
+// Prevent object mutation (prevent data mutation)
+function freezeObj(){
+    "use strict";
+    const MATH_CONSTANTS = {
+        PI: 3.14
+    };
+
+    Object.freeze(MATH_CONSTANTS);
+
+    try{
+        MATH_CONSTANTS.PI = 99;
+
+    }catch(ex){
+        console.log(ex);
+    }
+    return MATH_CONSTANTS.PI;
+}
+
+const PI = freezeObj();
+console.log(PI);

@@ -72,10 +72,19 @@ const increment = (function() {
 console.log(increment(5, 2));
 console.log(increment(5));
 
-// Rest Operator with function parameters
+// Rest Operator with function parameters (converts everything that's passed in to an array of args)
 const sum = (function() {
     return function sum(...args){
         return args.reduce((a, b) => a + b, 0);
     };
 })();
 console.log(sum(1, 2, 3, 4));
+
+// Spread operator (expands an existing array)
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+(function() {
+    arr2 = [...arr1];
+    arr1[0] = 'potato';
+})();
+console.log(arr2);

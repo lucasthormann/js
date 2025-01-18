@@ -15,6 +15,8 @@ const result = {
     skipped: ["id-blacklist", "no-dup-keys"]
 };
 
+
+
 function makeList(arr){
     const resultDisplayArray = [];
     for(let i = 0; i < arr.length; i++){

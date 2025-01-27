@@ -116,7 +116,7 @@ console.log(sum(1, 2, 3, 4));
 const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
 let arr2;
 (function() {
-    arr2 = [...arr1];
+    arr2 = [...arr1]; // copies elements of arr1 into arr2
     arr1[0] = 'potato';
 })();
 console.log(arr2);

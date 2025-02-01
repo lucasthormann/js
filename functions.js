@@ -64,3 +64,30 @@ console.log(bool);
 function efficientIsLess(a, b){
     return a < b;
 }
+//----------------------------------------------------------------------------------------------------------------------------------------------------
+// Arrow functions again from bottom to top
+// a concise way to write function expressions. Good for simple functions that you use only once.
+
+function hello(){
+    console.log("Hello");
+}
+
+hello();
+
+const hello1 = function(){ // using a function expression
+    console.log("Hello1");
+}
+
+hello1();
+
+const hello2 = () => console.log("Hello2"); // using arrow function
+
+hello2();
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const squares = numbers.map((element) => Math.pow(element, 2));
+const evenNums = numbers.filter((element) => element % 2 === 0);
+
+console.log(squares, evenNums);
+
